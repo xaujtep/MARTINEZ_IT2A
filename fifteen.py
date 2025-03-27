@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import math
 from turtle import *
@@ -21,4 +22,29 @@ for i in range(6000):
     goto(0,0)
 
 
+=======
+
+import math
+from turtle import *
+
+def hearta(k):
+    return 15*math.sin(k)**3
+
+def heartb(k):
+    return 12*math.cos(k)-5*\
+    math.cos(2*k)-2*\
+    math.cos(3*k)-\
+    math.cos(4*k)
+
+speed(100000)
+bgcolor("black")
+
+for i in range(6000):
+    goto(hearta(i)*20,heartb(i)*20)
+    for j in range(5):
+        color("pink")
+    goto(0,0)
+
+
+>>>>>>> afb4775 (Initial commit)
 done()
